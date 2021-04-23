@@ -1,0 +1,50 @@
+.reason {
+  background-color: #eff9ff;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5 1fr);
+  gap: 45px;
+  height: 100vh;
+  padding: 30px 70px 60px 70px;
+
+  @media all and(min-width:720px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 30px 60px;
+    background-color: #eff9ff;
+  }
+  &_title {
+    grid-column: span 2;
+    grid-row: span 2;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0 15px;
+    @media all and(min-width:720px) {
+      grid-column: span 4;
+    }
+  }
+  &_text {
+    grid-column: span 2;
+    grid-row: span 2;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    gap: 27, 7px;
+  }
+}
+
+.reason_button {
+  grid-column: span 2;
+  grid-row: span 2;
+  border-radius: 40px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  background-color: #f26002;
+  @media all and (min-width: 720px) {
+    grid-column: span 4;
+  }
+  max-width: 210px;
+  height: 45px;
+}
