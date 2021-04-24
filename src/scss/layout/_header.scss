@@ -3,16 +3,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 284px;
+  margin-bottom: 53px;
   width: 100vw;
   height: 100vh;
-  background-image: url(../assets/images/cover.jpg);
-  // background-color: cadetblue;
 }
-
 .header_menu {
   position: fixed;
   top: 0px;
   background-color: #0271bc;
   width: 44px;
   height: 44px;
+}
+.header_hero--title {
+  font-family: "Roboto Slab", serif;
+  line-height: 55px;
+  font-size: 42px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  width: 290px;
+  height: 110px;
+  text-align: center;
+}
+.header_hero--text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin-bottom: 45px;
 }
