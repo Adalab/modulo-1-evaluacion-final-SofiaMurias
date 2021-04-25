@@ -3,12 +3,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 53px;
   width: 100vw;
   height: 100vh;
   background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #ffffff;
+  @media all and (min-width: 720px) {
+    height: 778px;
+  }
+  @media all and (min-width: 1200px) {
+  }
 }
+
 .header_menu {
   display: flex;
   justify-content: center;
@@ -29,11 +37,30 @@
   width: 290px;
   height: 110px;
   text-align: center;
+
+  @media all and (min-width: 720px) {
+    line-height: 106px;
+    font-size: 80px;
+    width: 690px;
+    height: 212px;
+    margin-top: 384px;
+  }
+  @media all and (min-width: 1200px) {
+    width: 730px;
+    height: 264px;
+    line-height: 132px;
+    font-size: 100px;
+    margin-bottom: 0;
+  }
 }
 .header_hero--text {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   margin-bottom: 45px;
+  @media all and (min-width: 720px) {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
 }
 
 .header_hero--down {
@@ -46,5 +73,11 @@
   height: 45px;
   &--img {
     width: 20px;
+  }
+  @media all and (min-width: 720px) {
+    margin-bottom: 45px;
+  }
+  @media all and (min-width: 1200px) {
+    margin-bottom: 13px;
   }
 }

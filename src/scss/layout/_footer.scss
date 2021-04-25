@@ -6,36 +6,48 @@
   align-items: center;
   padding-top: 60px;
   padding-bottom: 45px;
+  height: 465px;
+  width: 100vw;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 30px;
+  @media all and (min-width: 720px) {
+    padding: 39px 45px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    height: 240px;
+  }
+  @media all and (min-width: 1200px) {
+    justify-content: center;
+  }
 
   &_menu--item {
     margin-bottom: 30px;
+    @media all and (min-width: 1200px) {
+      margin-right: 30px;
+    }
   }
 
   &_menu--item a {
     text-transform: uppercase;
     color: #ffffff;
   }
-  @media all and (min-width: 720px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 45px 39px;
-  }
 }
+
 .footer_arrow {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  transform: translate(0px, -50%);
+  transform: translate(0, -50%);
   width: 45px;
   height: 45px;
   background-color: #ffffff;
   border-radius: 50px;
+  margin: 0 38px;
   &--img {
     height: 24px;
   }
@@ -43,7 +55,12 @@
 
 .footer_box_menu--copy {
   color: #ffffff;
+  font-size: 14px;
   @media all and(min-width:720px) {
+    order: -1;
+  }
+  @media all and (min-width: 1200px) {
+    margin-right: 31px;
   }
 }
 .heart {
