@@ -58,10 +58,10 @@
   }
 }
 
-.reason_button {
-  display: flex;
-  justify-content: center;
-}
+// .reason_button {
+//   display: flex;
+//   justify-content: center;
+// }
 
 .reason_button--item {
   grid-column: span 2;
@@ -74,6 +74,12 @@
   background-color: #f26002;
   width: 210px;
   height: 45px;
+  transition: background-color ease 1s, border-color ease 1s;
+  &:hover {
+    background-color: #f26002;
+    border-color: #3b2103;
+    color: #3b2103;
+  }
   @media all and (min-width: 720px) {
     grid-column: span 3;
     grid-row: span 1;

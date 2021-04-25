@@ -35,6 +35,17 @@
     text-transform: uppercase;
     color: #ffffff;
   }
+
+  &_menu--copy {
+    color: #ffffff;
+    font-size: 14px;
+    @media all and(min-width:720px) {
+      order: -1;
+    }
+    @media all and (min-width: 1200px) {
+      margin-right: 31px;
+    }
+  }
 }
 
 .footer_arrow {
@@ -53,16 +64,6 @@
   }
 }
 
-.footer_box_menu--copy {
-  color: #ffffff;
-  font-size: 14px;
-  @media all and(min-width:720px) {
-    order: -1;
-  }
-  @media all and (min-width: 1200px) {
-    margin-right: 31px;
-  }
-}
 .heart {
   color: red;
 }
