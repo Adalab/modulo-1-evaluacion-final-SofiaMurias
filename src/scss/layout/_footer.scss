@@ -57,7 +57,17 @@
   height: 45px;
   background-color: $white;
   border-radius: 50px;
-
+  animation-name: arrow;
+  animation-duration: 0.5s;
+  animation-iteration-count: 10;
+  @keyframes arrow {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.5);
+    }
+  }
   &--img {
     height: 24px;
   }

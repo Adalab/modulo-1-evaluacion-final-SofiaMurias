@@ -1,68 +1,111 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
-  </head>
+<html lang="en">
 
-  <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel=" stylesheet" href="./assets/css/main.css">
+
+</head>
+
+<body>
+  <section class="container">
+    <div class="header_menu"> <a href="https://adalab.es/"><img src="./assets/images/ico-menu.svg" alt="Menu"></div></a>
+
+    <section class="header" id="header">
+
+      <secction class="header_hero">
+        <h1 class="header_hero--title">Anonymous Proxy</h1>
+
+        <p class="header_hero--text">in hac habitasse platea dictumst </p>
+
+        <div class="header_hero--down">
+          <a title="scroll-down" href="#reason"> <img class="header_hero--down--img"
+              src="./assets/images/ico-scroll-down.svg" alt="Adalab"></a>
+        </div>
+      </secction>
+
+    </section>
+  </section>
+
+  <main class="main">
+    <section class="container main_content">
+        <p class="main_content--tip">Insomnia Tips </p>
+        <h2 class="main_content--title">Looking throught a window</h2>
+        <p class="main_content--text">
+            Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus
+            semper
+            sodales rutrum.
         </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+        <div class="main_content--button">
+            <button class="main_content--button--item">Go</button>
+        </div>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+    </section>
+    <secction class="reason container">
+        <h2 id="reason" class="reason_title">3 Reasons to purchase</h2>
+        <article class="reason_text">
+            <h3 class="reason_text--title">Ut sed metus</h3>
+            <p class="reason_text--item">Lorem ipsum dolor sit amet consectetur.</p>
+        </article>
+        <article class="reason_text">
+            <h3 class="reason_text--title">Curabitur ac erat</h3>
+            <p class="reason_text--item">Mauris mattis urna quis lorem molestie.</p>
+        </article>
+        <article class="reason_text">
+            <h3 class="reason_text--title">Morbi dictum</h3>
+            <p class="reason_text--item"></p>Aliquam in dolor et dolor tincidunt.</p>
+        </article>
 
-          </li>
-        </ul>
-      </main>
+        <div class="reason_button">
+            <button class="reason_button--item"> Boton More Reason </button>
+        </div>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+    </secction>
+  </main>
 
-        </small>
-      </footer>
-
+  <section class="footer">
+    <div class="footer_arrow container">
+      <a title="Flecha" href="#header"> <img class="footer_arrow--img" src="./assets/images/ico-arrow.svg"
+          alt="Flecha"></a>
     </div>
-    <script src="./assets/js/main.js"></script>
-  </body>
+
+    <div class="footer_box container">
+      <section class="footer_box_menu">
+        <nav>
+          <ul class="footer_box_menu--item">
+            <li><a href="https://adalab.es/">Articles</a></li>
+            <li><a href="https://adalab.es/">Books</a></li>
+            <li><a href="https://adalab.es/">Events</a></li>
+            <li><a href="https://adalab.es/">Reason</a></li>
+            <li><a href="https://adalab.es/">Tips</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="footer_box_menu">
+        <nav>
+          <ul class="footer_box_menu--item">
+            <li><a href="https://adalab.es/">Twitter</a></li>
+            <li><a href="https://adalab.es/">Instagram</a></li>
+            <li><a href="https://adalab.es/">Mastodon.social</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="footer_box_menu--copy">
+        <span>©2021</span>
+        <div>We <span class="heart">❤</span> componens</div>
+      </section>
+    </div>
+
+  </section>
+
+</body>
+
 </html>
