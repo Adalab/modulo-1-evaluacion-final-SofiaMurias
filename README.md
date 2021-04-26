@@ -49,4 +49,4 @@ _Nota Impotante_: Necesitas tener instalado ADALAB STARTED KIT para trabajar con
 2. Clona este proyecto en tu repositorio.
 3. Inicia node para ver el resultado del proyecto.
 
-Cualquier duda sobre el proyecto no dudes en ponerte en contacto conmigo 😃
+Si después de esta información, aún te queda alguna de mi proyecto puedes ponerte en contacto conmigo.
