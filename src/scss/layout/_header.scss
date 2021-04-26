@@ -1,7 +1,5 @@
 .header_menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include display();
   position: fixed;
   top: 0px;
   background-color: #0271bc;
@@ -10,17 +8,15 @@
 }
 
 .header_hero {
-  display: flex;
+  @include display();
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #ffffff;
+  color: $white;
   @media all and (min-width: 720px) {
     height: 778px;
   }
@@ -28,7 +24,7 @@
   }
 
   &--title {
-    font-family: "Roboto Slab", serif;
+    font-family: $fontbold;
     line-height: 55px;
     font-size: 42px;
     text-transform: uppercase;
@@ -55,7 +51,7 @@
   }
 
   &--text {
-    font-family: "Roboto", sans-serif;
+    font-family: $fontRegular;
     font-size: 16px;
     margin-bottom: 45px;
     @media all and (min-width: 720px) {
@@ -65,10 +61,8 @@
   }
 
   &--down {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
+    @include display();
+    background-color: $white;
     border-radius: 50px;
     width: 45px;
     height: 45px;
